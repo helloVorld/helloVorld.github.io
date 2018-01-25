@@ -12,7 +12,7 @@ var imghtml='<div id="qrfile">' +
 			'</div>';
 var imgsubhtml = '<img id = "output" src = ""/><div><button onclick = "submitImage()">Submit Image</button><img id = "decimg" src = ""/></div>';
 var fliphtml = '<div id = "flipbtn"><img src = "include/images/flip-cam-512.png" alt = "Change Camera"/></div>';
-var screenhtml = '<div id = "screenbtn"><img id = "size-img" src = "include/images/fullscreen_224px_224px.png"/></div>';
+var screenhtml = '<div id = "screenbtn">visibility: visible;<img id = "size-img" src = "include/images/fullscreen_224px_224px.png"/></div>';
 var formhtml = '<div class = "contents">' +
 '	<div class = "wrap no-w"></div>' +
 '	<div class = "wrap form-wrapper">' +
