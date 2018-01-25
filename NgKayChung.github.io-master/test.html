@@ -6,7 +6,7 @@
 <script type = "text/javascript" src = "include/js/validation.js"></script>
 <link rel = "stylesheet" type = "text/css" href = "include/css/style.css"/>
 <style>
-@media only screen and (max-width: 1024px) {
+
 	video.full { 
 		position: fixed;
 		right: 0;
@@ -15,7 +15,7 @@
 		min-height: 100%;
 		width: auto;
 		height: auto;
-		z-index: -100;
+		z-index: 100;
 		background-size: cover; 
 	}
 	
@@ -25,12 +25,6 @@
 		height: auto;
 	}
 	
-	temp.none{
-         display:none;
-	}
-}
-	
-
 #outdiv {
 	border: 1px solid #000000;
 }
@@ -97,7 +91,6 @@
 				</div>
 			</div>
 		</div>
-		<button onclick="myFunction()">Try it</button>
 		<div id = "temp">
 			<h3>Instruction : </h3>
 			<ul>
@@ -112,10 +105,6 @@
 	<div class = "wrap no-w"></div>
 </div>
 <script type = "text/javascript" src = "include/js/validation_focus.js"></script>
-	<script>
-function myFunction() {
-    document.getElementById("temp").style.display = "none";
-}
 </script>
 
 </body>
