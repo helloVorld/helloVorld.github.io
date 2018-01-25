@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reader Test</title>
+<script src = "qcode/build/qcode-decoder.min.js"></script>
+<script type = "text/javascript" src = "include/js/validation.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "include/css/style.css"/>
+<style>
+/*@media screen and (max-width: 1024px) {*/
+	video.full { 
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		background-size: cover; 
+	}
+	
+	video.med {
+		max-width: 50%;
+		width: auto;
+		height: auto;
+	}
+/*}*/
+	
+#outdiv {
+	border: 1px solid #000000;
+}
+
+#outdiv video {
+	width: 100%;
+}
+
+.icon-wrap {
+	width: 49%;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+	
+.icon {
+	cursor: pointer;
+}
+
+.empty {
+	float: left;
+	width: 25%;
+	min-height: 10px;
+}
+
+.
+</style>
+<script type = "text/javascript" src = "include\js\qrcode-scan.js"></script>
+</head>
+<body>
+<div class = "contents qr-contents">
+	<div class = "wrap no-w"></div>
+	<div class = "wrap qrdec-wrapper">
+		<div class = "btn-grp">
+			<div class = "icon-wrap left">
+				<div id = "scan" class = "icon vidscan-wrap" title "Video QR Scan" onclick = "setwebcam()">
+					<img src = "include/images/video_scanner_icon.png" width = "45" height = "40"/>
+				</div>
+			</div>
+			<div class = "icon-wrap right">
+				<div id = "photo" class = "icon imgup-wrap" title = "QR Image Capture / Upload" onclick = "setimg()">
+					<img src = "include/images/photo_capture_icon.png" width = "40" height = "40"/>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div>
+				<div id = "result"></div>
+			</div>
+			<div id = "outdiv">
+				<div class = "video-contents">
+					<div class = "empty"></div>
+					<div id = "_vid" class = "vid-div"></div>
+					<div class = "empty"></div>
+				</div>
+				<div>
+						<div id = "flipp"></div>
+						<div id = "screening"></div>
+				</div>
+			</div>
+		</div>
+		<div id = "temp">
+			<h3>Instruction : </h3>
+			<ul>
+				<li> IOS 11 is supported for video scanning ONLY with Safari browser</li>
+				<li> IOS version below 11 should proceed to image upload</li>
+				<li> In case if your device does not support video scanning, please proceed to image upload</li>
+				<li> Click / Tap the above icons for QR code reading method</li>
+				<li> Please be reminded that you should allow this page to access to camera / photo gallery when prompted</li>
+			</ul>
+		</div>
+	</div>
+	<div class = "wrap no-w"></div>
+</div>
+<script type = "text/javascript" src = "include/js/validation_focus.js"></script>
+</body>
+</html>
