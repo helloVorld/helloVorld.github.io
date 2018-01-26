@@ -15,7 +15,7 @@
 		min-height: 100%;
 		width: auto;
 		height: auto;
-		z-index: 100;
+		z-index: -100;
 		background-size: cover; 
 	}
 	
@@ -25,9 +25,9 @@
 		height: auto;
 	}
 	
-#outdiv {
+/*#outdiv {
 	border: 1px solid #000000;
-}
+}*/
 
 #outdiv video {
 	width: 100%;
@@ -91,6 +91,18 @@
 				</div>
 			</div>
 		</div>
+		<div class="w3-container">
+                 <h2>W3.CSS Login Modal</h2>
+
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-large">Login</button>
+
+     <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+        <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+        <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
 		<div id = "temp">
 			<h3>Instruction : </h3>
 			<ul>
@@ -100,6 +112,8 @@
 				<li> Click / Tap the above icons for QR code reading method</li>
 				<li> Please be reminded that you should allow this page to access to camera / photo gallery when prompted</li>
 			</ul>
+	  <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
 		</div>
 	</div>
 	<div class = "wrap no-w"></div>
